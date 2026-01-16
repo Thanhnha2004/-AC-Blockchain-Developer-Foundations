@@ -16,6 +16,7 @@
     "typescript": "^5.8.3"
   },
   "devDependencies": {
-    "ethers": "^6.16.0"
+    "ethers": "^6.16.0",
+    "hardhat": "^2.28.3"
   }
 }

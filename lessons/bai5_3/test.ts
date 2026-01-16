@@ -11,6 +11,9 @@ async function main() {
 
   const contract = new ethers.Contract(contractAddress, abi, provider);
 
+  const tx = await contract.increment();
+  await tx.wait();
+
   const count = await contract.getCount();
   console.log("Current count is:", count.toString());
 }
